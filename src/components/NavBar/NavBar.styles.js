@@ -56,6 +56,7 @@ export const NavButton = styled.button`
 	}
 `;
 export const NavLink = styled.button`
+	z-index: 1000;
 	width: 40px;
 	height: 40px;
 	border-radius: 15px;
@@ -64,6 +65,7 @@ export const NavLink = styled.button`
 	filter: drop-shadow(0px 0px 2px #00000030);
 `;
 export const NavBg = styled.img`
+	z-index: 1001;
 	width: 100%;
 	filter: drop-shadow(0px 0px 2px #ffffff) invert();
 `;
