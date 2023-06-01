@@ -23,7 +23,7 @@ export const NavWrapper = styled.div`
 	color: white;
 	background-color: #333;
 	width: 75vw;
-	height: 50px;
+	height: 55px;
 	border-radius: 18px;
 	filter: drop-shadow(0px 0px 5px #ffffff30);
 	gap: 10px;
@@ -33,7 +33,7 @@ export const NavWrapper = styled.div`
 	visibility: visible;
 
 	&.close {
-		transform: translateX(0%) translateY(50%) scaleX(0%);
+		transform: translateX(-50%) translateY(50%) scaleX(0%);
 	}
 `;
 
@@ -59,8 +59,11 @@ export const NavButton = styled.button`
 `;
 export const NavLink = styled.button`
 	z-index: 1000;
-	width: 40px;
-	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
 	border-radius: 15px;
 	border: none;
 	background: #555;
@@ -68,7 +71,7 @@ export const NavLink = styled.button`
 `;
 export const NavBg = styled.img`
 	z-index: 1001;
-	width: 100%;
+	width: 90%;
 
 	filter: drop-shadow(0px 0px 2px #ffffff) invert();
 `;
