@@ -46,7 +46,6 @@ const TechStack = ({ refStack }) => {
 	};
 	return (
 		<Wrapper ref={refStack}>
-			<Background />
 			<SecondWrapper>
 				<MainText>Tech Stack</MainText>
 				<SecondText>Let&apos;s click it!</SecondText>
