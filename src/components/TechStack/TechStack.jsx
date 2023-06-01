@@ -6,6 +6,7 @@ import {
 	IconWrapperSec,
 	IconsWrapper,
 	MainText,
+	SecondText,
 	SecondWrapper,
 	Wrapper,
 } from './TechStack.styles';
@@ -48,35 +49,42 @@ const TechStack = ({ refStack }) => {
 			<Background />
 			<SecondWrapper>
 				<MainText>Tech Stack</MainText>
+				<SecondText>Let&apos;s click it!</SecondText>
 				<IconsWrapper>
 					<IconWrapper>
 						<IconWrapperSec id='test' onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>Test</IconText>
+							<IconText>
+								React is the number one JavaScript library for building JavaScript apps.
+								That&apos;s why I learned it
+							</IconText>
 							<IconStack src={PNGIcons.imgReact} />
 						</IconWrapperSec>
 						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconStack src={PNGIcons.imgReact} />
-							<IconText>Test</IconText>
-						</IconWrapperSec>
-					</IconWrapper>
-					<IconWrapper>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>Test</IconText>
-							<IconStack src={PNGIcons.imgReact} />
-						</IconWrapperSec>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconStack src={PNGIcons.imgReact} />
-							<IconText>Test</IconText>
+							<IconStack src={PNGIcons.imgJs} />
+							<IconText>
+								Already in technical school I got to know JavaScript and I liked it very
+								much
+							</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
 					<IconWrapper>
 						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>Test</IconText>
-							<IconStack src={PNGIcons.imgReact} />
+							<IconText>Today Responsive Web Design is must to now</IconText>
+							<IconStack src={PNGIcons.imgRes} />
 						</IconWrapperSec>
 						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconStack src={PNGIcons.imgReact} />
-							<IconText>Test</IconText>
+							<IconStack src={PNGIcons.imgHtml} />
+							<IconText>HTML The Most Popular Programming Language</IconText>
+						</IconWrapperSec>
+					</IconWrapper>
+					<IconWrapper>
+						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
+							<IconText>If website are lovely and beautiful design it is css </IconText>
+							<IconStack src={PNGIcons.imgCss} />
+						</IconWrapperSec>
+						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
+							<IconStack src={PNGIcons.imgSass} />
+							<IconText>But Scss is css on steroids</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
 				</IconsWrapper>

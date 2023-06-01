@@ -29,7 +29,6 @@ export const SecondWrapper = styled.div`
 	border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 export const IconsWrapper = styled.div`
-	margin-top: 30px;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
@@ -37,14 +36,14 @@ export const IconsWrapper = styled.div`
 	align-items: center;
 	height: 80%;
 	overflow: hidden;
-	max-width: 70%;
+	max-width: 90%;
 	.left {
-		transform: translateX(-36.7%);
-		filter: grayscale(0);
+		transform: translateX(-25%);
+		filter: grayscale(0%);
 	}
 	.right {
-		transform: translateX(36.7%);
-		filter: grayscale(0);
+		transform: translateX(25%);
+		filter: grayscale(0%);
 	}
 `;
 export const IconWrapper = styled.div`
@@ -53,27 +52,31 @@ export const IconWrapper = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 40px;
-	overflow: hidden;
+	gap: 60px;
+	min-width: 100%;
+	filter: grayscale(100%);
 `;
 export const IconWrapperSec = styled.div`
 	margin-top: 30px;
 	z-index: 2;
 	display: flex;
-	gap: 20px;
+	gap: 44px;
 	justify-content: center;
 	align-items: center;
 	width: 40%;
 `;
 
 export const MainText = styled(Text)`
-	margin: -25px 0 0 15px;
+	margin: -25px 100px 0 0px;
 	font-size: ${theme.fontSize.l};
 	font-weight: 800;
+	filter: drop-shadow(0px 0px 5px #ffffff60);
 `;
 export const SecondText = styled(Text)`
-	font-size: ${theme.fontSize.m};
-	font-weight: 600;
+	margin-top: 30px;
+	font-size: ${theme.fontSize.s};
+	font-weight: 300;
+	letter-spacing: 1px;
 `;
 
 export const IconStack = styled.img`
@@ -81,5 +84,7 @@ export const IconStack = styled.img`
 	height: 80px;
 `;
 export const IconText = styled(Text)`
-	width: 30px;
+	font-size: ${theme.fontSize.s};
+	font-weight: 400;
+	width: 200px;
 `;
