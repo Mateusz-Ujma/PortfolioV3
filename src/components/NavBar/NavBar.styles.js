@@ -17,13 +17,13 @@ export const NavWrapper = styled.div`
 	align-items: center;
 	bottom: 40px;
 	left: 50%;
-	transform: translateX(-50%) translateY(50%);
+	transform: translateX(-50%) translateY(50%) scaleX(100%);
 	margin: 0 0 0px 0;
 	z-index: 3;
 	color: white;
 	background-color: #333;
 	width: 75vw;
-	height: 60px;
+	height: 50px;
 	border-radius: 18px;
 	filter: drop-shadow(0px 0px 5px #ffffff30);
 	gap: 10px;
@@ -33,7 +33,7 @@ export const NavWrapper = styled.div`
 	visibility: visible;
 
 	&.close {
-		width: 75svw;
+		transform: translateX(0%) translateY(50%) scaleX(0%);
 	}
 `;
 
@@ -69,8 +69,6 @@ export const NavLink = styled.button`
 export const NavBg = styled.img`
 	z-index: 1001;
 	width: 100%;
-	height: 100%;
-	opacity: 1;
-	visibility: visible;
-	filter: drop-shadow(0px 0px 2px #ffffff);
+
+	filter: drop-shadow(0px 0px 2px #ffffff) invert();
 `;
