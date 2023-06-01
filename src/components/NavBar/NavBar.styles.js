@@ -22,7 +22,7 @@ export const NavWrapper = styled.div`
 	z-index: 3;
 	color: white;
 	background-color: #333;
-	width: 75svw;
+	width: 75vw;
 	height: 50px;
 	border-radius: 18px;
 	filter: drop-shadow(0px 0px 5px #ffffff30);
