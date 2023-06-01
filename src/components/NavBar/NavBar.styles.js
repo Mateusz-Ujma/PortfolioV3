@@ -72,5 +72,5 @@ export const NavBg = styled.img`
 	height: 100%;
 	opacity: 1;
 	visibility: visible;
-	filter: drop-shadow(0px 0px 2px #ffffff) invert();
+	filter: drop-shadow(0px 0px 2px #ffffff);
 `;
