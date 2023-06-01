@@ -23,12 +23,14 @@ export const NavWrapper = styled.div`
 	color: white;
 	background-color: #333;
 	width: 75vw;
-	height: 50px;
+	height: 60px;
 	border-radius: 18px;
 	filter: drop-shadow(0px 0px 5px #ffffff30);
 	gap: 10px;
 	transition: all 0.3s ease-in;
 	overflow: hidden;
+	opacity: 1;
+	visibility: visible;
 
 	&.close {
 		width: 0;
@@ -67,5 +69,8 @@ export const NavLink = styled.button`
 export const NavBg = styled.img`
 	z-index: 1001;
 	width: 100%;
+	height: 100%;
+	opacity: 1;
+	visibility: visible;
 	filter: drop-shadow(0px 0px 2px #ffffff) invert();
 `;
