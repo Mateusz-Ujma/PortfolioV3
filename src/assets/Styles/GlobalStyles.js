@@ -3,14 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 body{
   margin:0;
-
+  color:white;
   width: 100svw;
   background:black;
-  height:100svh;
+overflow-x: hidden;
 }
 #root{
 
-  width: 100svw;
   height:100%;
 }
 `;

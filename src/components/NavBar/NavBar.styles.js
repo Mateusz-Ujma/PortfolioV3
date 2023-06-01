@@ -3,10 +3,11 @@ import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
 export const Wrapper = styled.div`
 	position: sticky;
-
 	top: 0;
 	left: 0;
-	margin-top: 100px;
+	z-index: 100;
+	width: 100svw;
+	overflow-x: hidden;
 `;
 export const NavWrapper = styled.div`
 	position: fixed;
@@ -14,10 +15,10 @@ export const NavWrapper = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	bottom: 0;
+	bottom: 40px;
 	left: 50%;
-	transform: translateX(-50%);
-	margin: 0 0 20px 0;
+	transform: translateX(-50%) translateY(50%);
+	margin: 0 0 0px 0;
 	z-index: 3;
 	color: white;
 	background-color: #333;
@@ -27,18 +28,19 @@ export const NavWrapper = styled.div`
 	filter: drop-shadow(0px 0px 5px #ffffff30);
 	gap: 10px;
 	transition: all 0.3s ease-in;
-
 	overflow: hidden;
+
 	&.close {
 		width: 0;
 	}
 `;
 
 export const NavButton = styled.button`
+	z-index: 100;
 	position: fixed;
-	bottom: 80px;
-	left: 50%;
-	transform: translateX(-50%);
+	bottom: 90px;
+	right: 50%;
+	transform: translateX(50%) translateY(50%);
 	width: 40px;
 	height: 40px;
 	border-radius: 5rem;
@@ -47,11 +49,10 @@ export const NavButton = styled.button`
 	filter: drop-shadow(0px 0px 5px #ffffff30);
 	padding: 13px;
 	transition: all 0.3s ease-in;
+
 	&.close {
-		bottom: 0;
-		margin-bottom: 25px;
-		left: 30px;
-		transform: translateX(-50%);
+		bottom: 30px;
+		right: 30px;
 	}
 `;
 export const NavLink = styled.button`

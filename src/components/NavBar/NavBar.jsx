@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { NavBg, NavButton, NavLink, NavWrapper, Wrapper } from './NavBar.styles';
-import imgAbout from '../../assets/Images/Icons/about.png';
-import imgStack from '../../assets/Images/Icons/data.png';
-import imgHome from '../../assets/Images/Icons/home.png';
-import imgMail from '../../assets/Images/Icons/mail.png';
-import imgExp from '../../assets/Images/Icons/quality.png';
-import imgClose from '../../assets/Images/Icons/close.png';
+import PNGIcons from '../../assets/Images/Icons/PNGIcons';
 
-const NavBar = () => {
+const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
+	const handleClick = (ref) => {
+		ref.current?.scrollIntoView({ behavior: 'smooth' });
+	};
 	const [navOpen, setNavOpen] = useState(false);
 	return (
 		<Wrapper>
@@ -17,23 +15,23 @@ const NavBar = () => {
 					setNavOpen(!navOpen);
 				}}
 			>
-				<NavBg src={imgClose} />
+				<NavBg src={PNGIcons.imgClose} />
 			</NavButton>
 			<NavWrapper className={navOpen ? '' : 'close'}>
-				<NavLink>
-					<NavBg src={imgHome} />
+				<NavLink onClick={() => handleClick(refHome)}>
+					<NavBg src={PNGIcons.imgHome} />
 				</NavLink>
-				<NavLink>
-					<NavBg src={imgStack} />
+				<NavLink onClick={() => handleClick(refStack)}>
+					<NavBg src={PNGIcons.imgStack} />
 				</NavLink>
-				<NavLink>
-					<NavBg src={imgExp} />
+				<NavLink onClick={() => handleClick(refExp)}>
+					<NavBg src={PNGIcons.imgExp} />
 				</NavLink>
-				<NavLink>
-					<NavBg src={imgAbout} />
+				<NavLink onClick={() => handleClick(refAbout)}>
+					<NavBg src={PNGIcons.imgAbout} />
 				</NavLink>
-				<NavLink>
-					<NavBg src={imgMail} />
+				<NavLink onClick={() => handleClick(refContact)}>
+					<NavBg src={PNGIcons.imgMail} />
 				</NavLink>
 			</NavWrapper>
 		</Wrapper>

@@ -1,9 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Wrapper = styled.div`
-	height: ${(props) => {
-		props.height;
-	}}px;
 	min-height: 100svh;
 	width: 100svw;
 	position: absolute;
@@ -20,7 +17,7 @@ export const Icon = styled.img`
 	height: ${(props) => props.size}px;
 	opacity: 0.15;
 	top: ${(props) => props.top}px;
-	left: ${(props) => props.left}px;
+	left: ${(props) => props.left}svw;
 	rotate: ${(props) => props.rot}deg;
 	filter: invert() drop-shadow(0px 0px 4px #ffffff60);
 `;

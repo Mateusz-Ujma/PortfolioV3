@@ -6,12 +6,13 @@ export const Wrapper = styled.div`
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	min-height: 100svh;
+	width: 100svw;
 `;
 
 export const SecondWrapper = styled.div`
-	margin: 20px 0 0 0;
+	margin-top: 20px;
 	z-index: 2;
 	display: flex;
 	flex-direction: row;
@@ -20,7 +21,7 @@ export const SecondWrapper = styled.div`
 	gap: 20px;
 `;
 export const MainText = styled(Text)`
-	margin: 50px 0 80px 0;
+	margin: 50px 0 30px 0;
 	font-size: ${theme.fontSize.xxl};
 	font-weight: 700;
 	filter: drop-shadow(0px 0px 4px #ffffff60);
@@ -29,6 +30,15 @@ export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 700;
 	line-height: 3.4rem;
+	letter-spacing: 1px;
+	filter: drop-shadow(0px 0px 4px #ffffff60);
+`;
+export const ThirdText = styled(Text)`
+	text-align: center;
+	margin: 90px 25px 0 25px;
+	font-size: ${theme.fontSize.s};
+	font-weight: 400;
+	line-height: 1.5rem;
 	letter-spacing: 1px;
 	filter: drop-shadow(0px 0px 4px #ffffff60);
 `;
