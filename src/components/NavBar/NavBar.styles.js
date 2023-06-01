@@ -33,7 +33,7 @@ export const NavWrapper = styled.div`
 	visibility: visible;
 
 	&.close {
-		width: 0;
+		width: 75svw;
 	}
 `;
 
