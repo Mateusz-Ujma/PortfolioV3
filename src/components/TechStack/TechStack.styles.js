@@ -36,8 +36,7 @@ export const IconsWrapper = styled.div`
 	align-items: center;
 	height: 80%;
 	overflow: hidden;
-	min-width: 90%;
-	max-width: 91%;
+	max-width: 285px;
 	.left {
 		transform: translateX(-25%);
 		filter: grayscale(0%);
