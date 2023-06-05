@@ -22,7 +22,7 @@ export const SecondWrapper = styled.div`
 `;
 export const MainText = styled(Text)`
 	margin: 50px 0 30px 0;
-	font-size: ${theme.fontSize.xxl};
+	font-size: ${theme.fontSize.x4l};
 	font-weight: 700;
 	filter: drop-shadow(0px 0px 4px #ffffff60);
 `;
@@ -35,7 +35,8 @@ export const SecondText = styled(Text)`
 `;
 export const ThirdText = styled(Text)`
 	text-align: center;
-	margin: 90px 25px 0 25px;
+	width: 80%;
+	margin: 90px auto 0 auto;
 	font-size: ${theme.fontSize.s};
 	font-weight: 400;
 	line-height: 1.5rem;

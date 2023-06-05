@@ -27,7 +27,6 @@ function App() {
 				refAbout={refAbout}
 				refHome={refHome}
 			/>
-
 			<Home refHome={refHome} />
 			<TechStack refStack={refStack} />
 			<Experience refExp={refExp} />

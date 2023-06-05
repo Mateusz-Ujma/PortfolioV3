@@ -3,13 +3,13 @@ import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
 export const Wrapper = styled.div`
 	position: relative;
-	margin: 0 0 50px 0;
+	margin: 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 100svh;
 	width: 100svw;
+	margin-bottom: 50px;
 `;
 
 export const SecondWrapper = styled.div`
@@ -27,6 +27,12 @@ export const SecondWrapper = styled.div`
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	gap: 15px;
+`;
+export const FormWrapper = styled.form`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
 `;
 
 export const MainText = styled(Text)`
@@ -46,36 +52,30 @@ export const ThirdText = styled(Text)`
 	font-weight: ${(props) => (props.bold ? '800' : '400')};
 	letter-spacing: ${(props) => (props.bold ? '1.5' : '1')}px;
 	text-align: center;
-	line-height: 1.3rem;
+	line-height: 1.5rem;
 	padding: 10px;
 `;
-export const ExpTextMain = styled(Text)`
-	margin: 40px 0 0 0;
-	font-size: ${theme.fontSize.xl};
-	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
+export const Input = styled.input`
+	border-radius: 5px;
+	border: none;
+	font-size: ${theme.fontSize.s};
+	padding: 3px;
 `;
-export const IconStackWrapper = styled.div`
+export const TextArea = styled.textarea`
+	border-radius: 5px;
+	border: none;
+	font-size: ${theme.fontSize.s};
+	padding: 3px;
+`;
+export const SubmitBtn = styled.button`
+	font-size: ${theme.fontSize.s};
+	border: none;
+	padding: 3px;
+	border-radius: 5px;
+`;
+export const SecondFormWrapper = styled.div`
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	gap: 30px;
-	width: 90%;
-`;
-export const IconStack = styled.img`
-	width: 45px;
-	height: 45px;
-`;
-
-export const ImgWrap = styled.div`
-	margin-bottom: 10px;
-	width: 90%;
-	border-radius: 0.5rem;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-`;
-export const ProjectImg = styled.img`
-	width: 110%;
-	height: 110%;
-	aspect-ratio: 1.9/1;
+	gap: 5px;
 `;

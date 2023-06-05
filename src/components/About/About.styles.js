@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 100svh;
 	width: 100svw;
 `;
 
@@ -46,36 +45,6 @@ export const ThirdText = styled(Text)`
 	font-weight: ${(props) => (props.bold ? '800' : '400')};
 	letter-spacing: ${(props) => (props.bold ? '1.5' : '1')}px;
 	text-align: center;
-	line-height: 1.3rem;
+	line-height: 1.5rem;
 	padding: 10px;
-`;
-export const ExpTextMain = styled(Text)`
-	margin: 40px 0 0 0;
-	font-size: ${theme.fontSize.xl};
-	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
-`;
-export const IconStackWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-	width: 90%;
-`;
-export const IconStack = styled.img`
-	width: 45px;
-	height: 45px;
-`;
-
-export const ImgWrap = styled.div`
-	margin-bottom: 10px;
-	width: 90%;
-	border-radius: 0.5rem;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-`;
-export const ProjectImg = styled.img`
-	width: 110%;
-	height: 110%;
-	aspect-ratio: 1.9/1;
 `;
