@@ -22,11 +22,12 @@ transform: translateY(0);
 `;
 export const Wrapper = styled.div`
 	position: relative;
-	margin: 0;
+	margin: 100px 0 0 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100svw;
 	padding-bottom: 50px;
 	overflow: hidden;
@@ -63,7 +64,7 @@ export const SendMessage = styled.div`
 	transform: ${(props) =>
 		props.visible
 			? 'translateX(-50%) translateY(250%)'
-			: 'translateX(-50%) translateY(420%)'};
+			: 'translateX(-50%) translateY(435%)'};
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,6 +82,7 @@ export const FormWrapper = styled.form`
 
 export const MainText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
+	margin: 0 0 20px 0;
 	font-weight: 800;
 	filter: drop-shadow(0px 0px 5px #ffffff60);
 `;

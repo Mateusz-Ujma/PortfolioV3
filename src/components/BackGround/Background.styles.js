@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
+	z-index: 0;
 `;
 
 export const Icon = styled.img`

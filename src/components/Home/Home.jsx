@@ -41,10 +41,6 @@ const Home = ({ refHome }) => {
 				I&apos;ve always wanted to become a Frontend Developer. Now it&apos;s time to turn
 				what I&apos;ve learned into something I can show to everyone.
 			</ThirdText>
-			<Icon src={SVGIcons.svgJS} size={80} top={200} left={71} rot={-30} />
-			<Icon src={SVGIcons.svgREACT} size={80} top={400} left={0} rot={-45} />
-			<Icon src={SVGIcons.svgCSS} size={80} top={600} left={0} rot={-25} />
-			<Icon src={SVGIcons.svgHTML} size={80} top={50} left={0} rot={30} />
 		</Wrapper>
 	);
 };
