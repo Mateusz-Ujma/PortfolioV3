@@ -79,3 +79,12 @@ export const ProjectImg = styled.img`
 	height: 110%;
 	aspect-ratio: 1.9/1;
 `;
+
+export const Btn = styled.a`
+	padding: 5px;
+	border-radius: 5px;
+	background: #666;
+	color: white;
+	text-decoration: none;
+	filter: drop-shadow(0 0 5px #ffffff10);
+`;

@@ -10,7 +10,7 @@ import {
 	SecondWrapper,
 	Wrapper,
 } from './TechStack.styles';
-import Background from '../BackGround/Background';
+
 import { Icon } from '../BackGround/Background.styles';
 import SVGIcons from '../../assets/Images/SVG/svgIcon';
 import PNGIcons from '../../assets/Images/Icons/PNGIcons';
@@ -18,29 +18,34 @@ import PNGIcons from '../../assets/Images/Icons/PNGIcons';
 const TechStack = ({ refStack }) => {
 	let firstClick = true;
 	const [dir, setDir] = useState(false);
-	const handleIconClick = (e) => {
-		if (dir) {
-			e.target.classList.add('right');
-		} else {
-			e.target.classList.add('left');
+	const IconW = document.getElementsByClassName('IW');
+
+	const ResetSide = () => {
+		for (let i = 0; i < IconW.length; i++) {
+			IconW[i].classList.remove('left');
+			IconW[i].classList.remove('right');
 		}
 	};
+
 	const handleDirSwitchLeft = (e) => {
-		if (firstClick) {
+		if (
+			e.target.parentElement.parentElement.classList.contains('left') ||
+			e.target.parentElement.parentElement.classList.contains('right')
+		) {
 			if (e.target.parentElement.firstChild.tagName === 'IMG') {
-				e.target.parentElement.parentElement.classList.add('left');
-				firstClick = !firstClick;
+				ResetSide();
+				e.target.parentElement.parentElement.classList.remove('left');
 			} else {
-				e.target.parentElement.parentElement.classList.add('right');
-				firstClick = !firstClick;
+				ResetSide();
+				e.target.parentElement.parentElement.classList.remove('right');
 			}
 		} else {
 			if (e.target.parentElement.firstChild.tagName === 'IMG') {
-				e.target.parentElement.parentElement.classList.remove('left');
-				firstClick = !firstClick;
+				ResetSide();
+				e.target.parentElement.parentElement.classList.add('left');
 			} else {
-				e.target.parentElement.parentElement.classList.remove('right');
-				firstClick = !firstClick;
+				ResetSide();
+				e.target.parentElement.parentElement.classList.add('right');
 			}
 		}
 	};
@@ -50,8 +55,8 @@ const TechStack = ({ refStack }) => {
 				<MainText>Tech Stack</MainText>
 				<SecondText>Let&apos;s click it!</SecondText>
 				<IconsWrapper>
-					<IconWrapper>
-						<IconWrapperSec id='test' onClick={(e) => handleDirSwitchLeft(e)}>
+					<IconWrapper className='IW'>
+						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
 							<IconText>
 								React is the number one JavaScript library for building JavaScript apps.
 								That&apos;s why I learned it
@@ -66,7 +71,7 @@ const TechStack = ({ refStack }) => {
 							</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
-					<IconWrapper>
+					<IconWrapper className='IW'>
 						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
 							<IconText>Today Responsive Web Design is must to now</IconText>
 							<IconStack src={PNGIcons.imgRes} />
@@ -76,7 +81,7 @@ const TechStack = ({ refStack }) => {
 							<IconText>HTML The Most Popular Programming Language</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
-					<IconWrapper>
+					<IconWrapper className='IW'>
 						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
 							<IconText>If website are lovely and beautiful design it is css </IconText>
 							<IconStack src={PNGIcons.imgCss} />

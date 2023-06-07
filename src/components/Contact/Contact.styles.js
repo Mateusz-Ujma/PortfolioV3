@@ -1,6 +1,25 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
+
+const AnimIn = keyframes`
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+transform: translateY(-100%);
+	}
+
+`;
+const AnimOut = keyframes`
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+transform: translateY(0);
+	}
+
+`;
 export const Wrapper = styled.div`
 	position: relative;
 	margin: 0;
@@ -9,7 +28,8 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100svw;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
+	overflow: hidden;
 `;
 
 export const SecondWrapper = styled.div`
@@ -27,6 +47,30 @@ export const SecondWrapper = styled.div`
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	gap: 15px;
+`;
+export const SendMessage = styled.div`
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.17);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 300px;
+	height: 100px;
+	transform: ${(props) =>
+		props.visible
+			? 'translateX(-50%) translateY(250%)'
+			: 'translateX(-50%) translateY(420%)'};
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	transition: all 1s cubic-bezier(0, 0, 0, 0.8);
+	z-index: 1001;
+	font-weight: 600;
 `;
 export const FormWrapper = styled.form`
 	display: flex;

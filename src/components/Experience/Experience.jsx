@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+	Btn,
 	ExpTextMain,
 	IconStack,
 	IconStackWrapper,
@@ -23,7 +24,13 @@ const Experience = ({ refExp }) => {
 			<MainText>Projects</MainText>
 			<SecondWrapper>
 				<ImgWrap>
-					<ProjectImg src={Pic1} />
+					<a
+						href='https://karolinaglabmakeup.netlify.app/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<ProjectImg src={Pic1} />
+					</a>
 				</ImgWrap>
 				<ThirdText>Simple Web create for Makeup Artist</ThirdText>
 				<ThirdText>Stack:</ThirdText>
@@ -31,6 +38,22 @@ const Experience = ({ refExp }) => {
 					<IconStack src={PNGIcons.imgReact} />
 					<IconStack src={PNGIcons.imgSass} />
 					<IconStack src={PNGIcons.imgRes} />
+				</IconStackWrapper>
+				<IconStackWrapper>
+					<Btn
+						href='https://karolinaglabmakeup.netlify.app/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						View
+					</Btn>
+					<Btn
+						href='https://karolinaglabmakeup.netlify.app/'
+						target='_blank'
+						rel='noreferrer'
+					>
+						GitHub
+					</Btn>
 				</IconStackWrapper>
 			</SecondWrapper>
 			<ExpTextMain>Experience</ExpTextMain>
