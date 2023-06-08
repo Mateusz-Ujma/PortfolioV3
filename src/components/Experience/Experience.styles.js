@@ -21,18 +21,17 @@ export const SecondWrapper = styled.div`
 	width: 80svw;
 	margin-top: 80px;
 	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.17);
+	box-shadow: 0px 0 5px 3px ${theme.colors.Accent}30;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
 	gap: 15px;
 `;
 
 export const MainText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.m};
@@ -40,6 +39,7 @@ export const SecondText = styled(Text)`
 	letter-spacing: ${(props) => (props.bold ? '1.5' : '1')}px;
 	line-height: 2rem;
 	text-align: center;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const ThirdText = styled(Text)`
 	font-size: ${theme.fontSize.s};
@@ -48,12 +48,13 @@ export const ThirdText = styled(Text)`
 	text-align: center;
 	line-height: 1.3rem;
 	padding: 10px;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 `;
 export const ExpTextMain = styled(Text)`
 	margin: 40px 0 0 0;
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const IconStackWrapper = styled.div`
 	display: flex;
@@ -64,6 +65,7 @@ export const IconStackWrapper = styled.div`
 export const IconStack = styled.img`
 	width: 45px;
 	height: 45px;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 `;
 
 export const ImgWrap = styled.div`
@@ -73,18 +75,24 @@ export const ImgWrap = styled.div`
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+	aspect-ratio: 1.9/1;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 `;
 export const ProjectImg = styled.img`
 	width: 110%;
 	height: 110%;
-	aspect-ratio: 1.9/1;
 `;
 
 export const Btn = styled.a`
 	padding: 5px;
 	border-radius: 5px;
-	background: #666;
-	color: white;
+	font-size: ${theme.fontSize.s};
+	background: ${theme.colors.PrimaryButton};
+	color: ${theme.colors.Primary};
 	text-decoration: none;
-	filter: drop-shadow(0 0 5px #ffffff10);
+	font-family: 'Roboto Slab', serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-shadow: 0px 0px 10px ${theme.colors.Secondary};
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 `;

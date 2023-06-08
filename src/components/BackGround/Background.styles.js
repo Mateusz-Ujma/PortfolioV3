@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Icon = styled.img`
+	z-index: 0;
 	position: absolute;
 	width: ${(props) => props.size}px;
 	height: ${(props) => props.size}px;

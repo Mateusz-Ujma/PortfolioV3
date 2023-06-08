@@ -24,14 +24,14 @@ export const MainText = styled(Text)`
 	margin: 50px 0 30px 0;
 	font-size: ${theme.fontSize.x4l};
 	font-weight: 700;
-	filter: drop-shadow(0px 0px 4px #ffffff60);
+	filter: drop-shadow(0px 0px 4px ${theme.colors.Accent}70);
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 700;
 	line-height: 3.4rem;
 	letter-spacing: 1px;
-	filter: drop-shadow(0px 0px 4px #ffffff60);
+	filter: drop-shadow(0px 0px 4px ${theme.colors.Accent}70);
 `;
 export const ThirdText = styled(Text)`
 	text-align: center;
@@ -41,14 +41,13 @@ export const ThirdText = styled(Text)`
 	font-weight: 400;
 	line-height: 1.5rem;
 	letter-spacing: 1px;
-	filter: drop-shadow(0px 0px 4px #ffffff60);
+	filter: drop-shadow(0px 0px 4px ${theme.colors.Accent}70);
 `;
 
 export const SocialIcon = styled.a`
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	background-image: url(${(props) => props.img});
 	background-size: cover;
-
-	filter: drop-shadow(0px 0px 4px #00000060) invert();
+	filter: drop-shadow(0px 0px 4px ${theme.colors.Accent}) invert();
 `;

@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	min-height: 100svh;
 	width: 100svw;
 `;
@@ -22,11 +21,10 @@ export const SecondWrapper = styled.div`
 	width: 80svw;
 	margin-top: 80px;
 	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.17);
+	box-shadow: 0px 0 5px 3px ${theme.colors.Accent}30;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 export const IconsWrapper = styled.div`
 	z-index: 2;
@@ -70,18 +68,20 @@ export const MainText = styled(Text)`
 	margin: -25px 100px 0 0px;
 	font-size: ${theme.fontSize.l};
 	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const SecondText = styled(Text)`
 	margin-top: 30px;
-	font-size: ${theme.fontSize.s};
+	font-size: ${theme.fontSize.m};
 	font-weight: 300;
 	letter-spacing: 1px;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 
 export const IconStack = styled.img`
-	width: 80px;
-	height: 80px;
+	width: 73px;
+	height: 73px;
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const IconText = styled(Text)`
 	font-size: ${theme.fontSize.s};

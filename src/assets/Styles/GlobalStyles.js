@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
 html {
@@ -18,13 +19,12 @@ html {
 body{
   margin:0px;
   padding:0;
-  color:white;
+  color:${theme.colors.Primary};
   width: 100dvw;
-  background:black;
+  background:${theme.colors.Secondary};
 overflow-x: hidden;
 }
 #root{
-
  width: 95svw;
 }
 `;

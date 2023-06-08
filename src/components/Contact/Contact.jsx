@@ -23,7 +23,6 @@ const Contact = ({ refContact }) => {
 	const sendEmail = (e) => {
 		e.preventDefault();
 		setPopup(true);
-
 		if (name === '') {
 			setMess('You must enter your name!');
 			setPopup(true);
@@ -60,11 +59,9 @@ const Contact = ({ refContact }) => {
 		setTimeout(() => {
 			setPopup(false);
 		}, 3000);
-		console.log(popup);
 	};
 	return (
 		<Wrapper ref={refContact}>
-			{console.log(popup)}
 			<SendMessage className='mess' visible={popup}>
 				{mess}
 			</SendMessage>

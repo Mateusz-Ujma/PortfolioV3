@@ -30,7 +30,7 @@ function App() {
 				refAbout={refAbout}
 				refHome={refHome}
 			/>
-			<Parallax pages={6}>
+			<Parallax pages={5.7}>
 				<ParallaxLayer offset={0} speed={-0.1}>
 					<Icon src={SVGIcons.svgJS} size={80} top={400} left={71} rot={-30} />
 				</ParallaxLayer>
@@ -52,10 +52,10 @@ function App() {
 				<ParallaxLayer offset={3}>
 					<Experience />
 				</ParallaxLayer>
-				<ParallaxLayer offset={4}>
+				<ParallaxLayer offset={4} factor={0.4}>
 					<About refAbout={refAbout} />
 				</ParallaxLayer>
-				<ParallaxLayer offset={5}>
+				<ParallaxLayer offset={5} factor={0.4}>
 					<Contact refContact={refContact} />
 				</ParallaxLayer>
 			</Parallax>

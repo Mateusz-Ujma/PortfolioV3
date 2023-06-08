@@ -21,18 +21,18 @@ export const SecondWrapper = styled.div`
 	width: 80svw;
 	margin-top: 80px;
 	background: rgba(255, 255, 255, 0.25);
-	box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.17);
+	box-shadow: 0px 0 5px 3px ${theme.colors.Accent}30;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.18);
+
 	gap: 15px;
 `;
 
 export const MainText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
-	filter: drop-shadow(0px 0px 5px #ffffff60);
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.m};

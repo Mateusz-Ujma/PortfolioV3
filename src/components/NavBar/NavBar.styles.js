@@ -21,11 +21,11 @@ export const NavWrapper = styled.div`
 	margin: 0 0 0px 0;
 	z-index: 3;
 	color: white;
-	background-color: #333;
+	background-color: ${theme.colors.DarkSecondary};
 	width: 75vw;
 	height: 55px;
 	border-radius: 18px;
-	filter: drop-shadow(0px 0px 5px #ffffff30);
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35);
 	gap: 10px;
 	transition: all 0.3s ease-in;
 	overflow: hidden;
@@ -38,15 +38,15 @@ export const NavWrapper = styled.div`
 export const NavButton = styled.button`
 	z-index: 100;
 	position: fixed;
-	bottom: 90px;
+	bottom: 100px;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
 	width: 40px;
 	height: 40px;
 	border-radius: 5rem;
 	border: none;
-	background: #555;
-	filter: drop-shadow(0px 0px 5px #ffffff30);
+	background: ${theme.colors.PrimaryButton};
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35);
 	padding: 6px;
 	transition: all 0.3s ease-in;
 
@@ -64,13 +64,13 @@ export const NavLink = styled.button`
 	height: 45px;
 	border-radius: 15px;
 	border: none;
-	background: #555;
-	filter: drop-shadow(0px 0px 2px #00000030);
+	background: ${theme.colors.PrimaryButton};
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35);
 `;
 export const NavBg = styled.img`
 	z-index: 1001;
 	width: 90%;
 	padding: 5px;
 
-	filter: drop-shadow(0px 0px 2px #ffffff) invert();
+	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35) invert();
 `;

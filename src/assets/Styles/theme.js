@@ -1,6 +1,11 @@
 const theme = {
 	colors: {
-		black: '#000000',
+		Primary: '#dcfef6',
+		Secondary: '#00140f',
+		DarkSecondary: '#000504',
+		PrimaryButton: '#da6d3e',
+		SecondaryButton: '#ffffff',
+		Accent: '#da6d3e',
 	},
 	fontSize: {
 		s: '1rem',
