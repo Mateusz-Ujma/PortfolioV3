@@ -64,7 +64,7 @@ export const SendMessage = styled.div`
 	transform: ${(props) =>
 		props.visible
 			? 'translateX(-50%) translateY(250%)'
-			: 'translateX(-50%) translateY(435%)'};
+			: 'translateX(-50%) translateY(500%)'};
 	display: flex;
 	align-items: center;
 	justify-content: center;
