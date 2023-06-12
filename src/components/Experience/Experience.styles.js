@@ -3,7 +3,7 @@ import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
 export const Wrapper = styled.div`
 	position: relative;
-	margin: 0 0 50px 0;
+	margin: 0 0 100px 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
@@ -31,6 +31,7 @@ export const SecondWrapper = styled.div`
 export const MainText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
+	margin: 50px 0 0 0;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
 `;
 export const SecondText = styled(Text)`
@@ -51,7 +52,7 @@ export const ThirdText = styled(Text)`
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 `;
 export const ExpTextMain = styled(Text)`
-	margin: 40px 0 0 0;
+	margin: 50px 0 0 0;
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);

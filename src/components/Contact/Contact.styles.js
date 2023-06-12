@@ -4,7 +4,7 @@ import theme from '../../assets/Styles/theme';
 
 export const Wrapper = styled.div`
 	position: relative;
-	margin: 0 0 0 0;
+	margin: 180px 0 0 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;

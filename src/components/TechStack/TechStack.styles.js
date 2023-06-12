@@ -3,7 +3,7 @@ import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
 export const Wrapper = styled.div`
 	position: relative;
-	margin: 0;
+	margin: 0 0 50px 0;
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
