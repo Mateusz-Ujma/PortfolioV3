@@ -19,6 +19,7 @@ function App() {
 	const refExp = useRef(null);
 	const refContact = useRef(null);
 	const refAbout = useRef(null);
+	const height = window.innerHeight;
 
 	return (
 		<Wrapper>
@@ -53,6 +54,7 @@ function App() {
 					<Icon src={SVGIcons.svgREACT} size={100} top={3100} left={8} rot={30} />
 				</ParallaxLayer>
 				<ParallaxLayer offset={0} factory={4.9}>
+					<h1>{height}</h1>
 					<Home refHome={refHome} />
 					<TechStack refStack={refStack} />
 					<Project refExp={refExp} />

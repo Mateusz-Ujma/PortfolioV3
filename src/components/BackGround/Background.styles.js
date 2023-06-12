@@ -22,6 +22,6 @@ export const Icon = styled.img`
 	top: ${(props) => props.top}px;
 	left: ${(props) => props.left}svw;
 	rotate: ${(props) => props.rot}deg;
-	filter: drop-shadow(0 0 5px ${theme.colors.Accent});
+	filter: drop-shadow(0 0 5px ${theme.colors.Accent}90);
 	color: red;
 `;
