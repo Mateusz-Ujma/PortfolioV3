@@ -30,7 +30,7 @@ function App() {
 				refAbout={refAbout}
 				refHome={refHome}
 			/>
-			<Parallax pages={5.5}>
+			<Parallax pages={4.5}>
 				<ParallaxLayer offset={0} speed={-1.1}>
 					<Icon src={SVGIcons.svgJS} size={80} top={400} left={71} rot={-30} />
 				</ParallaxLayer>
@@ -52,7 +52,7 @@ function App() {
 				<ParallaxLayer offset={0} speed={0.1}>
 					<Icon src={SVGIcons.svgREACT} size={100} top={3100} left={8} rot={30} />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} factory={5.5}>
+				<ParallaxLayer offset={0} factory={4.5}>
 					<Home refHome={refHome} />
 					<TechStack refStack={refStack} />
 					<Project refExp={refExp} />
