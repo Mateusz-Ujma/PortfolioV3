@@ -11,9 +11,7 @@ export const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	width: 100svw;
-
 	overflow: hidden;
-	min-height: 50svh;
 `;
 
 export const SecondWrapper = styled.div`

@@ -50,9 +50,54 @@ export const NavButton = styled.button`
 	padding: 6px;
 	transition: all 0.3s ease-in;
 
+	&::before {
+		position: absolute;
+		top: 16px;
+		left: -10px;
+		content: '';
+		width: 30px;
+		transform: translateX(50%) translateY(50%) rotate(-45deg);
+		border: 2px solid ${theme.colors.Primary};
+		border-radius: 10px;
+		background-color: ${theme.colors.Primary};
+		transition: all 0.3s ease-in;
+	}
+	&::after {
+		position: absolute;
+		top: 16px;
+		left: -10px;
+		content: '';
+		width: 30px;
+		transform: translateX(50%) translateY(50%) rotate(45deg);
+		border: 2px solid ${theme.colors.Primary};
+		border-radius: 10px;
+		background-color: ${theme.colors.Primary};
+		transition: all 0.3s ease-in;
+	}
 	&.close {
 		bottom: 40px;
 		right: 40px;
+
+		&::before {
+			position: absolute;
+			top: 11px;
+			left: -10px;
+			content: '';
+			width: 30px;
+			transform: translateX(50%) translateY(50%);
+			border: 2px solid ${theme.colors.Primary};
+			border-radius: 10px;
+		}
+		&::after {
+			position: absolute;
+			top: 20px;
+			left: -2.8px;
+			content: '';
+			width: 25px;
+			transform: translateX(50%) translateY(50%);
+			border: 2px solid ${theme.colors.Primary};
+			border-radius: 10px;
+		}
 	}
 `;
 export const NavLink = styled.button`

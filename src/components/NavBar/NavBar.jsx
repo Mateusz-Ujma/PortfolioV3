@@ -15,7 +15,7 @@ const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
 					setNavOpen(!navOpen);
 				}}
 			>
-				<NavBg src={PNGIcons.imgClose} />
+				<NavBg />
 			</NavButton>
 			<NavWrapper className={navOpen ? '' : 'close'}>
 				<NavLink onClick={() => handleClick(refHome)}>

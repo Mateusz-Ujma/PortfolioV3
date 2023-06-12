@@ -30,32 +30,22 @@ function App() {
 				refAbout={refAbout}
 				refHome={refHome}
 			/>
-			<Parallax pages={5.7}>
+			<Parallax pages={4.9}>
 				<ParallaxLayer offset={0} speed={-0.1}>
 					<Icon src={SVGIcons.svgJS} size={80} top={400} left={71} rot={-30} />
 				</ParallaxLayer>
 				<ParallaxLayer offset={0} speed={-0.3}>
 					<Icon src={SVGIcons.svgCSS} size={80} top={200} left={0} rot={30} />
 				</ParallaxLayer>
-				<ParallaxLayer offset={1} speed={0.3}>
-					<Icon src={SVGIcons.svgCSS} size={100} top={200} left={38} rot={30} />
+				<ParallaxLayer offset={0} speed={0.3}>
+					<Icon src={SVGIcons.svgREACT} size={100} top={800} left={38} rot={30} />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0}>
+				<ParallaxLayer offset={0} factory={4.9}>
 					<Home refHome={refHome} />
-				</ParallaxLayer>
-				<ParallaxLayer offset={1}>
 					<TechStack refStack={refStack} />
-				</ParallaxLayer>
-				<ParallaxLayer offset={2}>
 					<Project refExp={refExp} />
-				</ParallaxLayer>
-				<ParallaxLayer offset={3}>
 					<Experience />
-				</ParallaxLayer>
-				<ParallaxLayer offset={4} factor={0.4}>
 					<About refAbout={refAbout} />
-				</ParallaxLayer>
-				<ParallaxLayer offset={5} factor={0.4}>
 					<Contact refContact={refContact} />
 				</ParallaxLayer>
 			</Parallax>
