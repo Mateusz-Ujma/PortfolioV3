@@ -31,14 +31,26 @@ function App() {
 				refHome={refHome}
 			/>
 			<Parallax pages={4.9}>
-				<ParallaxLayer offset={0} speed={-0.1}>
+				<ParallaxLayer offset={0} speed={-1.1}>
 					<Icon src={SVGIcons.svgJS} size={80} top={400} left={71} rot={-30} />
 				</ParallaxLayer>
 				<ParallaxLayer offset={0} speed={-0.3}>
 					<Icon src={SVGIcons.svgCSS} size={80} top={200} left={0} rot={30} />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.3}>
-					<Icon src={SVGIcons.svgREACT} size={100} top={800} left={38} rot={30} />
+				<ParallaxLayer offset={0} speed={-0.1}>
+					<Icon src={SVGIcons.svgREACT} size={100} top={1900} left={34} rot={30} />
+				</ParallaxLayer>
+				<ParallaxLayer offset={0} speed={-0.1}>
+					<Icon src={SVGIcons.svgREACT} size={130} top={1200} left={15} rot={30} />
+				</ParallaxLayer>
+				<ParallaxLayer offset={0} speed={0.5}>
+					<Icon src={SVGIcons.svgHTML} size={50} top={800} left={45} rot={30} />
+				</ParallaxLayer>
+				<ParallaxLayer offset={0} speed={0.5}>
+					<Icon src={SVGIcons.svgCSS} size={80} top={2200} left={21} rot={30} />
+				</ParallaxLayer>
+				<ParallaxLayer offset={0} speed={0.1}>
+					<Icon src={SVGIcons.svgREACT} size={100} top={3100} left={8} rot={30} />
 				</ParallaxLayer>
 				<ParallaxLayer offset={0} factory={4.9}>
 					<Home refHome={refHome} />
