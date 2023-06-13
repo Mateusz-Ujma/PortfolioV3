@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
 	justify-content: center;
 	width: 100svw;
 	overflow: hidden;
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const SecondWrapper = styled.div`
@@ -29,6 +32,12 @@ export const SecondWrapper = styled.div`
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	gap: 15px;
+	@media (width >= 768px) {
+		width: 75svw;
+	}
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 export const SendMessage = styled.div`
 	background: rgba(255, 255, 255, 0.25);
@@ -54,12 +63,26 @@ export const SendMessage = styled.div`
 	z-index: 1001;
 	font-weight: 600;
 	text-shadow: 0px 0px 10px ${theme.colors.Secondary};
+	@media (width >= 768px) {
+		width: 400px;
+		height: 150px;
+		transform: ${(props) =>
+			props.visible
+				? 'translateX(-50%) translateY(200%) '
+				: 'translateX(140%) translateY(200%) '};
+	}
 `;
 export const FormWrapper = styled.form`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 5px;
+	gap: 10px;
+	@media (width >= 768px) {
+		width: 400px;
+	}
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const MainText = styled(Text)`
@@ -67,6 +90,9 @@ export const MainText = styled(Text)`
 	margin: 0 0 20px 0;
 	font-weight: 800;
 	filter: drop-shadow(0px 0px 5px #ffffff60);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.xxl};
+	}
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.m};
@@ -82,10 +108,12 @@ export const ThirdText = styled(Text)`
 	text-align: center;
 	line-height: 1.5rem;
 	padding: 10px;
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.sm};
+	}
 `;
 export const Input = styled.input`
 	border-radius: 5px;
-
 	font-size: ${theme.fontSize.s};
 	padding: 3px;
 	background: rgba(255, 255, 255, 0.25);
@@ -103,6 +131,9 @@ export const Input = styled.input`
 		outline: none;
 		border: 1px solid ${theme.colors.Accent};
 		box-shadow: 0 8px 32px 0 ${theme.colors.Accent}50;
+	}
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
 	}
 `;
 export const TextArea = styled.textarea`
@@ -125,6 +156,9 @@ export const TextArea = styled.textarea`
 		border: 1px solid ${theme.colors.Accent};
 		box-shadow: 0 8px 32px 0 ${theme.colors.Accent}50;
 	}
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
+	}
 `;
 export const SubmitBtn = styled.button`
 	font-family: 'Roboto Slab', serif;
@@ -138,10 +172,16 @@ export const SubmitBtn = styled.button`
 	letter-spacing: 1px;
 	text-shadow: 0px 0px 10px ${theme.colors.Secondary};
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
+	}
 `;
 export const SecondFormWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 5px;
+	gap: 10px;
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;

@@ -8,6 +8,7 @@ import {
 	SecondFormWrapper,
 	SubmitBtn,
 	SendMessage,
+	ThirdText,
 } from './Contact.styles';
 import emailjs from '@emailjs/browser';
 
@@ -63,7 +64,7 @@ const Contact = ({ refContact }) => {
 	return (
 		<Wrapper ref={refContact}>
 			<SendMessage className='mess' visible={popup}>
-				{mess}
+				<ThirdText>{mess}</ThirdText>
 			</SendMessage>
 			<MainText>Contact</MainText>
 			<FormWrapper ref={form} onSubmit={sendEmail}>

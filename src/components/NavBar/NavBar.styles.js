@@ -33,6 +33,12 @@ export const NavWrapper = styled.div`
 	&.close {
 		transform: translateX(-50%) translateY(50%) scaleX(0%);
 	}
+	@media (width >= 768px) {
+		width: 50vw;
+		height: 80px;
+		bottom: 55px;
+		gap: 15px;
+	}
 `;
 
 export const NavButton = styled.button`
@@ -99,6 +105,41 @@ export const NavButton = styled.button`
 			border-radius: 10px;
 		}
 	}
+	@media (width >= 768px) {
+		width: 55px;
+		height: 55px;
+		bottom: 130px;
+		&::before {
+			top: 21px;
+			left: -13px;
+			width: 40px;
+			border: 3px solid ${theme.colors.Primary};
+		}
+		&::after {
+			top: 21px;
+			left: -13px;
+			width: 40px;
+			border: 3px solid ${theme.colors.Primary};
+		}
+
+		&.close {
+			bottom: 55px;
+			right: 55px;
+
+			&::before {
+				top: 14px;
+				left: -13px;
+				width: 40px;
+				border: 3px solid ${theme.colors.Primary};
+			}
+			&::after {
+				top: 27px;
+				left: -5px;
+				width: 35px;
+				border: 3px solid ${theme.colors.Primary};
+			}
+		}
+	}
 `;
 export const NavLink = styled.button`
 	z-index: 1000;
@@ -111,11 +152,14 @@ export const NavLink = styled.button`
 	border: none;
 	background: ${theme.colors.PrimaryButton};
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35);
+	@media (width >= 768px) {
+		width: 55px;
+		height: 55px;
+	}
 `;
 export const NavBg = styled.img`
 	z-index: 1001;
 	width: 90%;
 	padding: 5px;
-
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35) invert();
 `;

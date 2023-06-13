@@ -9,6 +9,9 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100svw;
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const SecondWrapper = styled.div`
@@ -25,6 +28,14 @@ export const SecondWrapper = styled.div`
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
 	gap: 15px;
+
+	@media (width >= 768px) {
+		width: 75svw;
+		padding: 30px 0 30px 0;
+	}
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const MainText = styled(Text)`
@@ -32,6 +43,9 @@ export const MainText = styled(Text)`
 	font-weight: 800;
 	margin: 50px 0 0 0;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.xxl};
+	}
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.m};
@@ -40,6 +54,9 @@ export const SecondText = styled(Text)`
 	line-height: 2rem;
 	text-align: center;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.l};
+	}
 `;
 export const ThirdText = styled(Text)`
 	font-size: ${theme.fontSize.s};
@@ -49,6 +66,11 @@ export const ThirdText = styled(Text)`
 	line-height: 1.3rem;
 	padding: 10px;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
+		font-weight: 400;
+		line-height: 1.8rem;
+	}
 `;
 export const ExpTextMain = styled(Text)`
 	margin: 50px 0 0 0;
@@ -61,11 +83,18 @@ export const IconStackWrapper = styled.div`
 	justify-content: center;
 	gap: 30px;
 	width: 90%;
+	@media (width >= 768px) {
+		gap: 50px;
+	}
 `;
 export const IconStack = styled.img`
 	width: 45px;
 	height: 45px;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
+	@media (width >= 768px) {
+		width: 60px;
+		height: 60px;
+	}
 `;
 
 export const ImgWrap = styled.div`
@@ -95,4 +124,9 @@ export const Btn = styled.a`
 	letter-spacing: 1px;
 	text-shadow: 0px 0px 10px ${theme.colors.Secondary};
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
+		padding: 8px;
+		font-weight: 400;
+	}
 `;

@@ -9,11 +9,13 @@ const theme = {
 	},
 	fontSize: {
 		s: '1rem',
+		sm: '1.15rem',
 		m: '1.5rem',
 		l: '2.2rem',
 		xl: '2.9rem',
 		xxl: '3.6rem',
 		x4l: '6rem',
+		x5l: '9rem',
 	},
 };
 export default theme;

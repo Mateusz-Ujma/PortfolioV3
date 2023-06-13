@@ -10,6 +10,9 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 100svw;
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const SecondWrapper = styled.div`
@@ -25,14 +28,23 @@ export const SecondWrapper = styled.div`
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	border-radius: 10px;
-
 	gap: 15px;
+	@media (width >= 768px) {
+		width: 75svw;
+		padding: 15px;
+	}
+	@media (width >= 992px) {
+		width: auto;
+	}
 `;
 
 export const MainText = styled(Text)`
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.xxl};
+	}
 `;
 export const SecondText = styled(Text)`
 	font-size: ${theme.fontSize.m};
@@ -40,6 +52,9 @@ export const SecondText = styled(Text)`
 	letter-spacing: ${(props) => (props.bold ? '1.5' : '1')}px;
 	line-height: 2rem;
 	text-align: center;
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.xxl};
+	}
 `;
 export const ThirdText = styled(Text)`
 	font-size: ${theme.fontSize.s};
@@ -48,4 +63,10 @@ export const ThirdText = styled(Text)`
 	text-align: center;
 	line-height: 1.5rem;
 	padding: 10px;
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.m};
+		line-height: 1.8rem;
+		font-weight: 300;
+		letter-spacing: 1.5px;
+	}
 `;
