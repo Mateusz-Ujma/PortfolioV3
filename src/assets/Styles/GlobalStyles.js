@@ -22,7 +22,7 @@ body{
   color:${theme.colors.Primary};
   width: 100dvw;
   background:${theme.colors.Secondary};
-overflow-x: hidden;
+
 }
 #root{
  width: 95svw;
