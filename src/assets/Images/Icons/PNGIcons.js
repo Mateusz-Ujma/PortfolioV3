@@ -10,6 +10,7 @@ import imgJs from './js.png';
 import imgReact from './react.png';
 import imgSass from './sass.png';
 import imgRes from './responsive.png';
+import imgForw from './fast-forward.png';
 
 const PNGIcons = {
 	imgAbout,
@@ -24,5 +25,6 @@ const PNGIcons = {
 	imgStack,
 	imgClose,
 	imgRes,
+	imgForw,
 };
 export default PNGIcons;

@@ -14,18 +14,19 @@ html {
   box-sizing: inherit;
   margin:0;
   padding:0;
+  font-family: 'Roboto Slab', serif;
   }
 
 body{
   margin:0px;
   padding:0;
   color:${theme.colors.Primary};
-  width: 100dvw;
+  width: 100%;
   background:${theme.colors.Secondary};
-overflow-x: hidden;
+
 }
 #root{
- width: 95svw;
+ width: 100%;
 }
 `;
 

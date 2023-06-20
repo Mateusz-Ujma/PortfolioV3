@@ -16,7 +16,7 @@ import { Icon } from '../BackGround/Background.styles';
 
 const Home = ({ refHome }) => {
 	return (
-		<Wrapper ref={refHome}>
+		<Wrapper ref={refHome} id='test'>
 			<SecondWrapper>
 				<SocialIcon
 					img={github}
