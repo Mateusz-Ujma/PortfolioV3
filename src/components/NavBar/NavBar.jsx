@@ -4,10 +4,11 @@ import PNGIcons from '../../assets/Images/Icons/PNGIcons';
 
 const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
 	const exp = document.getElementById('test1');
+	const [navOpen, setNavOpen] = useState(false);
+	const width = window.innerWidth;
 	const handleClick = (ref) => {
 		ref.current?.scrollIntoView({ behavior: 'smooth' });
 	};
-	const [navOpen, setNavOpen] = useState(false);
 	return (
 		<Wrapper>
 			<NavButton
@@ -16,28 +17,30 @@ const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
 					setNavOpen(!navOpen);
 				}}
 			>
-				<NavBg src={navOpen ? PNGIcons.imgClose : PNGIcons.imgForw} />
+				{width > 992 ? (
+					<NavBg src={navOpen ? PNGIcons.imgClose : PNGIcons.imgForw} />
+				) : null}
 			</NavButton>
 			<NavWrapper className={navOpen ? '' : 'close'}>
 				<NavLink onClick={() => handleClick(refHome)}>
 					<NavBg src={PNGIcons.imgHome} />
-					<NavText>Home</NavText>
+					{width > 992 ? <NavText>Home</NavText> : null}
 				</NavLink>
 				<NavLink onClick={() => handleClick(refStack)}>
 					<NavBg src={PNGIcons.imgStack} />
-					<NavText>Tech Stack</NavText>
+					{width > 992 ? <NavText>Tech Stack</NavText> : null}
 				</NavLink>
 				<NavLink onClick={() => handleClick(refExp)}>
 					<NavBg src={PNGIcons.imgExp} />
-					<NavText>Experience</NavText>
+					{width > 992 ? <NavText>Experience</NavText> : null}
 				</NavLink>
 				<NavLink onClick={() => handleClick(refAbout)}>
 					<NavBg src={PNGIcons.imgAbout} />
-					<NavText>About me</NavText>
+					{width > 992 ? <NavText>About me</NavText> : null}
 				</NavLink>
 				<NavLink onClick={() => handleClick(refContact)}>
 					<NavBg src={PNGIcons.imgMail} />
-					<NavText>Contact</NavText>
+					{width > 992 ? <NavText>Contact</NavText> : null}
 				</NavLink>
 			</NavWrapper>
 		</Wrapper>

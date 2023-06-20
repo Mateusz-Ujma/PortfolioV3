@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
 	justify-content: center;
 	width: 100svw;
 	overflow: hidden;
+	padding-bottom: 90px;
 	@media (width >= 992px) {
 		width: auto;
 	}

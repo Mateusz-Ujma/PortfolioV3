@@ -23,10 +23,16 @@ body{
   color:${theme.colors.Primary};
   width: 100%;
   background:${theme.colors.Secondary};
-
+height:100svh;
 }
 #root{
- width: 100%;
+
+
+	margin: 0;
+width:100%;
+	overflow-y: auto;
+  overflow-x:hidden;
+
 }
 `;
 

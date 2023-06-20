@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
 export const Wrapper = styled.div`
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 100;
