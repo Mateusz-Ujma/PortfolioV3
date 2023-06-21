@@ -16,79 +16,72 @@ import SVGIcons from '../../assets/Images/SVG/svgIcon';
 import PNGIcons from '../../assets/Images/Icons/PNGIcons';
 
 const TechStack = ({ refStack }) => {
-	let firstClick = true;
-	const [dir, setDir] = useState(false);
-	const IconW = document.getElementsByClassName('IW');
+	// let firstClick = true;
+	// const [dir, setDir] = useState(false);
+	// const IconW = document.getElementsByClassName('IW');
 
-	const ResetSide = () => {
-		for (let i = 0; i < IconW.length; i++) {
-			IconW[i].classList.remove('left');
-			IconW[i].classList.remove('right');
-		}
-	};
+	// const ResetSide = () => {
+	// 	for (let i = 0; i < IconW.length; i++) {
+	// 		IconW[i].classList.remove('left');
+	// 		IconW[i].classList.remove('right');
+	// 	}
+	// };
 
-	const handleDirSwitchLeft = (e) => {
-		if (
-			e.target.parentElement.parentElement.classList.contains('left') ||
-			e.target.parentElement.parentElement.classList.contains('right')
-		) {
-			if (e.target.parentElement.firstChild.tagName === 'IMG') {
-				ResetSide();
-				e.target.parentElement.parentElement.classList.remove('left');
-			} else {
-				ResetSide();
-				e.target.parentElement.parentElement.classList.remove('right');
-			}
-		} else {
-			if (e.target.parentElement.firstChild.tagName === 'IMG') {
-				ResetSide();
-				e.target.parentElement.parentElement.classList.add('left');
-			} else {
-				ResetSide();
-				e.target.parentElement.parentElement.classList.add('right');
-			}
-		}
-	};
+	// const handleDirSwitchLeft = (e) => {
+	// 	if (
+	// 		e.target.parentElement.parentElement.classList.contains('left') ||
+	// 		e.target.parentElement.parentElement.classList.contains('right')
+	// 	) {
+	// 		if (e.target.parentElement.firstChild.tagName === 'IMG') {
+	// 			ResetSide();
+	// 			e.target.parentElement.parentElement.classList.remove('left');
+	// 		} else {
+	// 			ResetSide();
+	// 			e.target.parentElement.parentElement.classList.remove('right');
+	// 		}
+	// 	} else {
+	// 		if (e.target.parentElement.firstChild.tagName === 'IMG') {
+	// 			ResetSide();
+	// 			e.target.parentElement.parentElement.classList.add('left');
+	// 		} else {
+	// 			ResetSide();
+	// 			e.target.parentElement.parentElement.classList.add('right');
+	// 		}
+	// 	}
+	// };
 	return (
 		<Wrapper ref={refStack}>
 			<SecondWrapper>
 				<MainText>Tech Stack</MainText>
-				<SecondText>Let&apos;s click it!</SecondText>
 				<IconsWrapper>
-					<IconWrapper className='IW'>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>
-								React is the number one JavaScript library for building JavaScript apps.
-								That&apos;s why I learned it
-							</IconText>
+					<IconWrapper>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgReact} />
+							<IconText>ReactJS</IconText>
 						</IconWrapperSec>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgJs} />
-							<IconText>
-								Already in technical school I got to know JavaScript and I liked it very
-								much
-							</IconText>
+							<IconText>Java Script</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
-					<IconWrapper className='IW'>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>Today Responsive Web Design is must to now</IconText>
+					<IconWrapper>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgRes} />
+							<IconText>Responsive Web Design</IconText>
 						</IconWrapperSec>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgHtml} />
-							<IconText>HTML The Most Popular Programming Language</IconText>
+							<IconText>HTML</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
-					<IconWrapper className='IW'>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
-							<IconText>If website are lovely and beautiful design it is css </IconText>
+					<IconWrapper>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgCss} />
+							<IconText>CSS </IconText>
 						</IconWrapperSec>
-						<IconWrapperSec onClick={(e) => handleDirSwitchLeft(e)}>
+						<IconWrapperSec>
 							<IconStack src={PNGIcons.imgSass} />
-							<IconText>But Scss is css on steroids</IconText>
+							<IconText>SCSS</IconText>
 						</IconWrapperSec>
 					</IconWrapper>
 				</IconsWrapper>

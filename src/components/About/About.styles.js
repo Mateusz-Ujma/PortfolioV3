@@ -34,7 +34,7 @@ export const SecondWrapper = styled.div`
 		padding: 15px;
 	}
 	@media (width >= 992px) {
-		width: auto;
+		width: 80%;
 	}
 `;
 
@@ -68,5 +68,8 @@ export const ThirdText = styled(Text)`
 		line-height: 1.8rem;
 		font-weight: 300;
 		letter-spacing: 1.5px;
+	}
+	@media (width >= 992px) {
+		font-size: ${theme.fontSize.sm};
 	}
 `;

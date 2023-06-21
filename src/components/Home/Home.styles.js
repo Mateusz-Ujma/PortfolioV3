@@ -61,7 +61,7 @@ export const SecondText = styled(Text)`
 		font-weight: 800;
 	}
 	@media (width >= 992px) {
-		font-size: ${theme.fontSize.xxl};
+		font-size: ${(props) => (props.engName ? theme.fontSize.l : theme.fontSize.xxl)};
 		line-height: 3.7rem;
 		font-weight: 700;
 	}

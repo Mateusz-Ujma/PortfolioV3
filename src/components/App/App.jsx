@@ -80,10 +80,10 @@ function App() {
 						<Project refExp={refExp} />
 						<Experience />
 					</SecondWrapper>
-					<SecondWrapper>
-						<About refAbout={refAbout} />
-						<Contact refContact={refContact} />
-					</SecondWrapper>
+
+					<About refAbout={refAbout} />
+
+					<Contact refContact={refContact} />
 				</MainWrapper>
 			)}
 			<Icon

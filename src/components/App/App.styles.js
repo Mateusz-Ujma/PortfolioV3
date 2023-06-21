@@ -11,12 +11,16 @@ export const SecondWrapper = styled.div`
 		grid-template-rows: 1fr;
 		grid-column-gap: 50px;
 		grid-row-gap: 0px;
+		width: 100%;
 	}
 `;
 export const MainWrapper = styled.div`
 	@media (width>=992px) {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+
+		width: 100%;
 		padding: 0px 30px 0px 95px;
 	}
 `;

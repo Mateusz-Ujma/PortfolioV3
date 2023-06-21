@@ -1,6 +1,18 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Text } from '../../utils/SmallComponents/Text';
 import theme from '../../assets/Styles/theme';
+
+const ColoredText = keyframes`
+ 0%{
+color: ${theme.colors.Primary};
+ }
+ 50%{color: ${theme.colors.Accent};}
+ 75%{color: ${theme.colors.Accent};}
+ 100%{
+color: ${theme.colors.Primary};
+ }
+`;
+
 export const Wrapper = styled.div`
 	position: relative;
 	margin: 0 0 50px 0;
@@ -33,6 +45,7 @@ export const SecondWrapper = styled.div`
 	}
 	@media (width >= 992px) {
 		width: auto;
+		padding: 0 0 30px 0;
 	}
 `;
 export const IconsWrapper = styled.div`
@@ -42,8 +55,9 @@ export const IconsWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	height: 80%;
-	overflow: hidden;
+	gap: 10px;
 	max-width: 285px;
+	padding-top: 25px;
 	.left {
 		transform: translateX(-25%);
 		filter: grayscale(0%);
@@ -56,6 +70,9 @@ export const IconsWrapper = styled.div`
 		width: 75svw;
 		max-width: 300px;
 	}
+	@media (width >= 992px) {
+		gap: 20px;
+	}
 `;
 export const IconWrapper = styled.div`
 	z-index: 2;
@@ -63,26 +80,34 @@ export const IconWrapper = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 60px;
 	min-width: 100%;
-	filter: grayscale(100%);
+
+	filter: grayscale(0%);
 	@media (width >= 768px) {
-		gap: 80px;
 	}
 `;
 export const IconWrapperSec = styled.div`
 	margin-top: 30px;
 	z-index: 2;
 	display: flex;
-	gap: 44px;
+	gap: 10px;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 40%;
+
 	@media (width >= 768px) {
 		height: 130px;
 	}
 	@media (width >= 992px) {
 		height: 100px;
+		filter: grayscale(100%);
+		transition: all 0.7s;
+		&:hover {
+			filter: grayscale(0%);
+			div {
+				animation: ${ColoredText} 1.2s infinite;
+			}
+		}
 	}
 `;
 
@@ -127,9 +152,11 @@ export const IconStack = styled.img`
 export const IconText = styled(Text)`
 	font-size: ${theme.fontSize.s};
 	font-weight: 400;
-	width: 200px;
+	width: 130px;
+	text-align: center;
 	@media (width >= 768px) {
 		font-size: ${theme.fontSize.sm};
 		letter-spacing: 1px;
+		width: 200px;
 	}
 `;

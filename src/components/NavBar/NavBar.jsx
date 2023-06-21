@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
-import { NavBg, NavButton, NavLink, NavText, NavWrapper, Wrapper } from './NavBar.styles';
+import {
+	NavBg,
+	NavButton,
+	NavLink,
+	NavText,
+	NavWrapper,
+	SecondWrapper,
+	Wrapper,
+} from './NavBar.styles';
 import PNGIcons from '../../assets/Images/Icons/PNGIcons';
+import { SocialIcon } from '../Home/Home.styles';
+import github from '../../assets/Images/Icons/github.png';
+import fb from '../../assets/Images/Icons/facebook.png';
+import link from '../../assets/Images/Icons/linkedin.png';
 
 const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
 	const exp = document.getElementById('test1');
@@ -42,6 +54,27 @@ const NavBar = ({ refStack, refExp, refContact, refAbout, refHome }) => {
 					<NavBg src={PNGIcons.imgMail} />
 					{width > 992 ? <NavText>Contact</NavText> : null}
 				</NavLink>
+				{width > 992 ? (
+					<SecondWrapper>
+						<SocialIcon
+							img={github}
+							href='https://github.com/Mateusz-Ujma'
+							target='_blank'
+						></SocialIcon>
+						<SocialIcon
+							img={fb}
+							href='https://www.facebook.com/mateusz.ujma.7'
+							target='_blank'
+						></SocialIcon>
+						<SocialIcon
+							img={link}
+							href='https://www.linkedin.com/in/mateusz-ujma/'
+							target='_blank'
+						></SocialIcon>
+					</SecondWrapper>
+				) : (
+					''
+				)}
 			</NavWrapper>
 		</Wrapper>
 	);

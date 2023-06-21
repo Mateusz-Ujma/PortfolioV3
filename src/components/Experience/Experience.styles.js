@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	width: 100svw;
 	@media (width >= 992px) {
 		width: auto;
@@ -34,7 +35,7 @@ export const SecondWrapper = styled.div`
 		padding: 30px 0 30px 0;
 	}
 	@media (width >= 992px) {
-		width: auto;
+		width: 85%;
 	}
 `;
 
@@ -71,12 +72,20 @@ export const ThirdText = styled(Text)`
 		font-weight: 400;
 		line-height: 1.8rem;
 	}
+	@media (width >= 992px) {
+		font-size: ${theme.fontSize.sm};
+		font-weight: 400;
+		line-height: 1.8rem;
+	}
 `;
 export const ExpTextMain = styled(Text)`
 	margin: 50px 0 0 0;
 	font-size: ${theme.fontSize.xl};
 	font-weight: 800;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}60);
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.xxl};
+	}
 `;
 export const IconStackWrapper = styled.div`
 	display: flex;
@@ -86,6 +95,9 @@ export const IconStackWrapper = styled.div`
 	@media (width >= 768px) {
 		gap: 50px;
 	}
+	@media (width >= 768px) {
+		gap: 30px;
+	}
 `;
 export const IconStack = styled.img`
 	width: 45px;
@@ -94,6 +106,10 @@ export const IconStack = styled.img`
 	@media (width >= 768px) {
 		width: 60px;
 		height: 60px;
+	}
+	@media (width >= 992px) {
+		width: 50px;
+		height: 50px;
 	}
 `;
 
@@ -126,6 +142,11 @@ export const Btn = styled.a`
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Accent}40);
 	@media (width >= 768px) {
 		font-size: ${theme.fontSize.m};
+		padding: 8px;
+		font-weight: 400;
+	}
+	@media (width >= 768px) {
+		font-size: ${theme.fontSize.sm};
 		padding: 8px;
 		font-weight: 400;
 	}

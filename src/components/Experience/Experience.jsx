@@ -15,7 +15,7 @@ import {
 
 const Experience = () => {
 	return (
-		<Wrapper id='test1'>
+		<Wrapper>
 			<ExpTextMain>Experience</ExpTextMain>
 			<SecondWrapper>
 				<SecondText bold>2020 - 2022</SecondText>

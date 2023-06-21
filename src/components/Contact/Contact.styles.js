@@ -37,7 +37,7 @@ export const SecondWrapper = styled.div`
 		width: 75svw;
 	}
 	@media (width >= 992px) {
-		width: auto;
+		width: 80%;
 	}
 `;
 export const SendMessage = styled.div`
@@ -65,12 +65,14 @@ export const SendMessage = styled.div`
 	font-weight: 600;
 	text-shadow: 0px 0px 10px ${theme.colors.Secondary};
 	@media (width >= 768px) {
+		transition: all 0.5s cubic-bezier(0, 0, 0, 0.8);
+		opacity: ${(props) => (props.visible ? '1' : '0')};
 		width: 400px;
 		height: 150px;
 		transform: ${(props) =>
 			props.visible
 				? 'translateX(-50%) translateY(200%) '
-				: 'translateX(140%) translateY(200%) '};
+				: 'translateX(-50%) translateY(200%) '};
 	}
 `;
 export const FormWrapper = styled.form`
@@ -82,7 +84,7 @@ export const FormWrapper = styled.form`
 		width: 400px;
 	}
 	@media (width >= 992px) {
-		width: auto;
+		width: 615px;
 	}
 `;
 
@@ -184,5 +186,6 @@ export const SecondFormWrapper = styled.div`
 	gap: 10px;
 	@media (width >= 992px) {
 		width: auto;
+		flex-direction: row;
 	}
 `;

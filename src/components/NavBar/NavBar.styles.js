@@ -48,10 +48,11 @@ export const NavWrapper = styled.div`
 		border-radius: 0;
 		transform: translateX(0) translateY(0) scaleX(100%);
 		gap: 15px;
-		padding-top: 70px;
+		padding-top: 80px;
 		justify-content: start;
 		align-items: start;
 		padding-left: 10px;
+		transition: all 0.2s ease;
 		&.close {
 			transform: translateX(0%);
 			width: 80px;
@@ -166,7 +167,7 @@ export const NavButton = styled.button`
 		width: 40px;
 		padding: 4px;
 		transform: translateX(380%) translateY(20%);
-		transition: all 0.3s ease-in;
+		transition: all 0.3s ease;
 		&::before {
 			width: 0px;
 			height: 0px;
@@ -185,13 +186,13 @@ export const NavButton = styled.button`
 			margin: 0 0px 0px 0;
 			width: 100%;
 			height: 100%;
-			transition: all 0.3s ease-in;
+			transition: all 0.3s ease;
 		}
 		&.close {
 			transform: translateX(28%) translateY(20%);
 			width: 40px;
 			height: 40px;
-			transition: all 0.3s ease-in;
+			transition: all 0.3s ease;
 			padding: 3px;
 			&::before {
 				width: 0px;
@@ -203,7 +204,6 @@ export const NavButton = styled.button`
 			&::after {
 				width: 0px;
 				height: 0px;
-
 				border: none;
 				border-radius: 0;
 			}
@@ -247,5 +247,16 @@ export const NavBg = styled.img`
 	padding: 5px;
 	filter: drop-shadow(0px 0px 5px ${theme.colors.Primary}35) invert();
 	@media (width >= 992px) {
+	}
+`;
+export const SecondWrapper = styled.div`
+	@media (width >= 992px) {
+		margin-top: auto;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
 	}
 `;
